@@ -3,7 +3,7 @@ public class Product {
     int barCode;
     double price;
 
-    //private final double tax = (100 + 20) / 100;
+    //private static final double tax = (100 + 20) / 100;
 
     private static final double tax = 1.2;
 
@@ -15,7 +15,8 @@ public class Product {
 
 
     public String toString() {
-        return "Product: " + name + " " + ", with bar code: " + barCode + " " + ", has a price: " + price;
+        return "Product: " + name + ", with bar code: " + barCode + ", has a standard price: " + price
+                + ", and price after taxes: " + productPrice();
     }
 
     public double productPrice() {
