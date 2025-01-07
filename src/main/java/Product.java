@@ -13,7 +13,6 @@ public class Product {
         this.price = price;
     }
 
-
     public String toString() {
         return "Product: " + name + ", with bar code: " + barCode + ", has a standard price: " + price
                 + ", and price after taxes: " + productPrice();
